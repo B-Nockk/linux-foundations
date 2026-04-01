@@ -1,0 +1,50 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 165888 10880 ?        Ss   18:58   0:02 /sbin/init
+root           2  0.0  0.0   3072  1792 ?        Sl   18:58   0:00 /init
+root           6  0.0  0.0   3388  2204 ?        Sl   18:58   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          66  0.0  0.1  64132 14336 ?        S<s  18:58   0:01 /lib/systemd/systemd-journald
+root          97  0.0  0.0  22720  5632 ?        Ss   18:58   0:01 /lib/systemd/systemd-udevd
+systemd+     102  0.0  0.1  26336 13696 ?        Ss   18:58   0:00 /lib/systemd/systemd-resolved
+systemd+     116  0.0  0.0  89364  7296 ?        Ssl  18:58   0:00 /lib/systemd/systemd-timesyncd
+root         190  0.0  0.0   4308  2560 ?        Ss   18:58   0:00 /usr/sbin/cron -f -P
+message+     192  0.0  0.0   8656  4480 ?        Ss   18:58   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         199  0.0  0.2  30184 18816 ?        Ss   18:58   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       200  0.0  0.0 222404  5248 ?        Ssl  18:58   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         206  0.0  0.0  15324  7424 ?        Ss   18:58   0:00 /lib/systemd/systemd-logind
+root         237  0.0  0.2 107172 21236 ?        Ssl  18:58   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         302  0.0  0.0   3080  1024 ?        Ss   18:58   0:00 /init
+root         303  0.0  0.0   3096  1152 ?        S    18:58   0:00 /init
+nockk        304  0.0  0.0   7424  6144 pts/0    Ss   18:58   0:00 -bash
+root         305  0.0  0.0   7524  4736 pts/1    Ss   18:58   0:00 /bin/login -f
+nockk        325  0.0  0.0   6104  4864 pts/1    S+   18:58   0:00 -bash
+root         369  0.0  0.0   3240  2176 hvc0     Ss+  19:00   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+root         720  0.0  0.2 293036 20224 ?        Ssl  19:17   0:00 /usr/libexec/packagekitd
+root         724  0.0  0.0 234516  7168 ?        Ssl  19:17   0:00 /usr/libexec/polkitd --no-debug
+nockk       3189  0.0  0.0   2940  1920 pts/0    S    20:22   0:00 /init /mnt/c/Users/ebrus/AppData/Local/Programs/Zed/Zed.exe /mnt/c/Users/ebrus/AppData/Local/Programs/Zed/Zed.exe \\wsl.localhost\Ubuntu-22.04\home\nockk\devops\linux
+root        3212  0.0  0.0   3080  1028 ?        Ss   20:22   0:00 /init
+root        3213  0.0  0.0   3096  1160 ?        S    20:22   0:00 /init
+nockk       3214  0.0  0.1  91644  9948 pts/2    Ssl+ 20:22   0:01 .zed_server/zed-remote-server-stable-0.229.0+stable.206.7c07887d9555953bca7fe78417602114092ef8c8 proxy --identifier workspace-11
+nockk       3216  0.9  0.7 4495156 61048 pts/2   Sl+  20:22   0:21 /home/nockk/.zed_server/zed-remote-server-stable-0.229.0+stable.206.7c07887d9555953bca7fe78417602114092ef8c8 run --log-file /home/nockk/.local/share/zed/logs/server-workspace-11.log --pid-file /home/nockk/.local/share/zed/server_state/workspace-11/server.pid --stdin-socket /home/nockk/.local/share/zed/server_state/workspace-11/stdin.sock --stdout-socket /home/nockk/.local/share/zed/server_state/workspace-11/stdout.sock --stderr-socket /home/nockk/.local/share/zed/server_state/workspace-11/stderr.sock
+nockk       3224  0.8  0.0  75016  7424 pts/2    S+   20:22   0:19 /home/nockk/.zed_server/zed-remote-server-stable-0.229.0+stable.206.7c07887d9555953bca7fe78417602114092ef8c8 --crash-handler /home/nockk/.cache/zed/zed-crash-handler-3216
+nockk       3225  0.8  0.0  75016  7296 pts/2    S+   20:22   0:19 /home/nockk/.zed_server/zed-remote-server-stable-0.229.0+stable.206.7c07887d9555953bca7fe78417602114092ef8c8 --crash-handler /home/nockk/.cache/zed/zed-crash-handler-3214
+root        3269  0.0  0.0   3080  1028 ?        Ss   20:22   0:00 /init
+root        3270  0.0  0.0   3096  1036 ?        S    20:22   0:00 /init
+nockk       3271  0.0  0.0   7288  6144 pts/3    Ss+  20:22   0:00 /bin/bash -l
+nockk       4438  0.0  0.0   4916  3456 pts/0    S+   21:02   0:00 bash ./lab_2_file_descriptor.sh
+nockk       4445  0.0  0.0   7484  3072 pts/0    R+   21:02   0:00 ps aux
+ 21:02:43 up  2:05,  1 user,  load average: 0.00, 0.04, 0.03
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         477G  206G  271G  44% /usr/lib/wsl/drivers
+/dev/sde        251G  2.6G  236G   2% /
+none            3.9G   76K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G  516K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\             477G  206G  271G  44% /mnt/c
+tmpfs           795M     0  795M   0% /run/user/1000
